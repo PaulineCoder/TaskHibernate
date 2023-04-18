@@ -1,10 +1,13 @@
 package jm.task.core.jdbc.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Table
+@Entity
 public class User {
     @Id
     private Long id;
@@ -58,5 +61,12 @@ public class User {
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "name = '" + name + '\''  +
+                " lastName = '" + lastName + '\'' +
+                " age = " + age ;
     }
 }
