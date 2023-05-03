@@ -13,6 +13,6 @@ public class Main {
         userService.saveUser("Greg","Mentalist",(byte) 2);
         System.out.println(userService.getAllUsers());
         userService.cleanUsersTable();
-//        userService.dropUsersTable();
+        userService.dropUsersTable();
     }
 }
